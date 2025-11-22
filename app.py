@@ -25,7 +25,7 @@ if uploaded_file and gmail_user and gmail_app_password:
         body_content = """
         <html>
         <body>
-        <p><img src="cid:logo" alt="Shah & Patel Group Logo" width="150"></p>
+        <p><img src="PS.png" alt="Shah & Patel Group Logo" width="150"></p>
         <p>Dear Garages Team,</p>
         <p>We are pleased to inform you that <b>Shah & Patel Group</b> has a 
         <b>Maruti Suzuki Wagon R 1.0 (2010 model)</b> available for sale.</p>
@@ -65,7 +65,7 @@ if uploaded_file and gmail_user and gmail_app_password:
 
             # Attach logo
             try:
-                with open("logo.png", "rb") as f:  # Place logo.png in repo
+                with open("PS.png", "rb") as f:  # Place logo.png in repo
                     logo = MIMEImage(f.read())
                     logo.add_header("Content-ID", "<logo>")
                     msg.attach(logo)
