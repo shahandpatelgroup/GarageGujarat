@@ -25,7 +25,7 @@ if uploaded_file and gmail_user and gmail_app_password:
         body_content = """
         <html>
         <body>
-        <p><img src="PS.png" alt="Shah & Patel Group Logo" width="150"></p>
+        <p><img src="cid:logo" alt="Shah & Patel Group Logo" width="150"></p>
         <p>Dear Garages Team,</p>
         <p>We are pleased to inform you that <b>Shah & Patel Group</b> has a 
         <b>Maruti Suzuki Wagon R 1.0 (2010 model)</b> available for sale.</p>
