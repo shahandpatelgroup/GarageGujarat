@@ -20,6 +20,8 @@ if uploaded_file and gmail_user and gmail_app_password:
     st.write("Preview of uploaded data:")
     st.dataframe(df)
 
+    
+
     if st.button("Send Emails"):
         # Email body content
         body_content = """
