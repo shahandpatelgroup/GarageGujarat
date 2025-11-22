@@ -45,7 +45,6 @@ if uploaded_file and gmail_user and gmail_app_password:
         </body>
         </html>
         """
-      msg.attach(MIMEText(body_content, "html"))
         # SMTP setup
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
@@ -61,7 +60,7 @@ if uploaded_file and gmail_user and gmail_app_password:
             msg["Subject"] = f"Offer: Wagon R 1.0 (2010) - Shah & Patel Group"
 
             # Attach body
-            msg.attach(MIMEText(body_content, "plain"))
+            msg.attach(MIMEText(body_content, "html"))
 
             # Attach logo
             try:
